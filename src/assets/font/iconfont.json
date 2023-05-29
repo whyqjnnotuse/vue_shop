@@ -1,0 +1,23 @@
+{
+  "id": "4088213",
+  "name": "vue-shop",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "24423632",
+      "name": "icon_mima",
+      "font_class": "icon_mima",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "24423644",
+      "name": "icon_yonghu",
+      "font_class": "icon_yonghu",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    }
+  ]
+}
