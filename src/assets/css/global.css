@@ -15,3 +15,6 @@ body,
 .el-row{
     margin-bottom: 20px;
 }
+.el-cascader-panel {
+    max-height: 300px;
+}

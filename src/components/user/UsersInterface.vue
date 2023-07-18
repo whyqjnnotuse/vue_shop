@@ -265,7 +265,7 @@ export default {
         // 监听编辑按钮的点击事件
         async showEditDialog(id) {
             this.editDialogVisible = true
-            // console.log(id);
+            console.log(id);
             // 根据id获取用户的信息
             const { data: res } = await this.$http.get('users/' + id)
             if (res.meta.status !== 200) return this.$message.error('获取用户信息失败')

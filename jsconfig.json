@@ -9,6 +9,7 @@
         "src/*"
       ]
     },
+    
     "lib": [
       "esnext",
       "dom",
@@ -16,4 +17,5 @@
       "scripthost"
     ]
   }
+  
 }
