@@ -18,3 +18,12 @@ body,
 .el-cascader-panel {
     max-height: 300px;
 }
+.el-step{
+    margin: 20px 0;
+}
+.el-step__title{
+    font-size: 13px;
+}
+.ql-editor{
+    min-height: 300px;
+}
