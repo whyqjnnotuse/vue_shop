@@ -30,7 +30,7 @@
                 </el-table-column>
                 <el-table-column label="是否发货" prop="is_send">
                 </el-table-column>
-                <el-table-column label="下单时间" prop="create_time" width="210px">
+                <el-table-column label="下单时间" prop="create_time" width="195px">
                     <template slot-scope="scope">
                         {{ scope.row.create_time | dateFormat }}
                     </template>
@@ -46,7 +46,7 @@
             <!-- 分页 -->
             <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange"
                 :current-page="queryInfo.pagenum" :page-sizes="[3, 5, 10, 15]" :page-size="queryInfo.pagesize"
-                layout="total, sizes, prev, pager, next, jumper" :total="total">
+                layout="total, sizes, prev, pager, next, jumper" :total="total" class="fy">
             </el-pagination>
         </el-card>
 
@@ -146,5 +146,8 @@ export default {
 <style lang="less" scoped>
 .el-cascader{
     width: 100%;
+}
+.fy{
+    margin-top: 20px;
 }
 </style>
