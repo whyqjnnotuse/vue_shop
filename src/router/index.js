@@ -21,9 +21,10 @@ const Cate = () => import(/* webpackChunkName:"cate_params" */ '../components/go
 const Params = () => import(/* webpackChunkName:"cate_params" */ '../components/goods/ParamsInterface.vue')
 
 // import GoodsList from '../components/goods/ListInterface.vue'
-const GoodsList = () => import(/* webpackChunkName:"goodslist_add" */ '../components/goods/ListInterface.vue')
+const GoodsList = () => import(/* webpackChunkName:"goodslist_add_edit" */ '../components/goods/ListInterface.vue')
 // import Add from '../components/goods/AddInterface.vue'
-const Add = () => import(/* webpackChunkName:"goodslist_add" */ '../components/goods/AddInterface.vue')
+const Add = () => import(/* webpackChunkName:"goodslist_add_edit" */ '../components/goods/AddInterface.vue')
+const Edit = () => import(/* webpackChunkName:"goodslist_add_edit" */ '../components/goods/EditInterface.vue')
 
 
 // import Order from '../components/order/OrderInterface.vue'
@@ -49,6 +50,7 @@ const router = new Router({
         { path:'/params',component:Params},
         { path:'/goods',component:GoodsList},
         { path:'/goods/add',component:Add},
+        { path:'/goods/edit/:id',component:Edit},
         { path:'/orders',component:Order},
         { path:'/reports',component:Report},
       ] 

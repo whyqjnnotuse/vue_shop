@@ -32,7 +32,7 @@
                 </el-table-column>
                 <el-table-column label="操作" width="180px">
                     <template slot-scope="scope">
-                        <el-button type="primary" size="mini" icon="el-icon-edit">编辑</el-button>
+                        <el-button type="primary" size="mini" icon="el-icon-edit" @click="editGoods(scope.row.goods_id)">编辑</el-button>
                         <el-button type="danger" size="mini" icon="el-icon-delete"
                             @click="removeById(scope.row.goods_id)">删除</el-button>
                     </template>
@@ -46,6 +46,8 @@
                 layout="total, sizes, prev, pager, next, jumper" :total="total" background class="page">
             </el-pagination>
         </el-card>
+
+        
     </div>
 </template>
 <script>
@@ -105,6 +107,11 @@ export default {
         // 编程式导航跳转到添加商品页面
         goAddpage(){
             this.$router.push('/goods/add')
+        },
+        // 编辑商品
+        editGoods(id){
+            this.$router.push('/goods/edit/'+ id)
+            
         }
 
     }
