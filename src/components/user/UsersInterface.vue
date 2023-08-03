@@ -254,7 +254,7 @@ export default {
                 if (!valid) return
                 // 可以发起网络请求
                 const { data: res } = await this.$http.post('users', this.addForm)
-                if (res.meta.status !== 201) return this.$message.error('添加用户失败')
+                if (res.meta.status !== 201) return this.$message.error(res.meta.msg)
                 this.$message.success('添加用户成功')
                 this.addDialogVisible = false
                 this.getUserList()
