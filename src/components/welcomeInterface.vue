@@ -1,7 +1,6 @@
 <template>
     <div>
-        welcome
-
+        <h1>Welcome to my first project online</h1>
     </div>
 </template>
 <script>

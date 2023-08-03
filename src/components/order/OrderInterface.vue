@@ -10,7 +10,7 @@
         <el-card>
             <el-row :gutter="20">
                 <el-col :span="10">
-                    <el-input placeholder="请输入内容" clearable @clear="getOrderList">
+                    <el-input placeholder="请输入内容" clearable v-model="queryInfo.query" @clear="getOrderList">
                         <el-button slot="append" icon="el-icon-search" @click="getOrderList"></el-button>
                     </el-input>
                 </el-col>
